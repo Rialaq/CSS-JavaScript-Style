@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="Pop-up">
+        <p class="msj">Computing is any activity that uses 
+            computers to manage, process, and communicate information. 
+            It includes development of both hardware and software. 
+            Computing is a critical, integral component of modern industrial technology.
+        </p>
+        <button class="btnClass">Close Msj</button>
+    </div>
+    <div class="Backdrop"></div>
+
+
+    <script>
+        let Popup = document.getElementsByClassName('Pop-up')[0];
+        setTimeout(() => { Popup.style.transform = "scale(1.0)"; }, 800);
+        setTimeout(() => { Popup.style.opacity = "100"; }, 800);
+
+    </script>
+</body>
+</html>

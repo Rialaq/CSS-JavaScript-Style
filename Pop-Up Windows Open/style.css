@@ -1,0 +1,57 @@
+html,
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-image: url(bg.jpg);
+    background-size: 1980px;
+}
+
+.Pop-up{
+    margin: auto;
+    background: #e3e3e3;
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    overflow: hidden;
+    height: 20%;
+    left:35%;
+    top: 35%;
+    transform: scale(1.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    transition: all 500ms ease;
+    opacity: 0;
+}
+.msj{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.btnClass{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    top: 30px;
+    position: relative;
+    background-color: #388E3C;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+.btnClass:hover{
+    height: 80px;
+    top: 10px;
+}
+.Backdrop{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 1, 0.20, 0.20);
+    backdrop-filter: blur(10px);
+}
